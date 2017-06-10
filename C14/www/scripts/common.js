@@ -1,4 +1,4 @@
-﻿function serverURL() {
+function serverURL() {
     return "http://jacksonng.org/friendszone";
 }
 
