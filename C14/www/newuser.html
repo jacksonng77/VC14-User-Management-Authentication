@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: http://jacksonng.org https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+
+    <script src="lib/jquery-1.11.2.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="lib/jquery.validate.min.js"></script>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/newuser.js"></script>
+
+    <title>Friendszone</title>
+</head>
+<body>
+    <div data-role="page" id="front-page">
+        <div data-role="header" class="header" data-position="fixed">
+            <h1 id="app-title">Friendszone</h1>
+        </div>
+
+        <div role="main" class="ui-content" id="main-ui">
+            <form name="NewUserForm" id="NewUserForm">
+                <div data-role="fieldcontainer">
+                    <label for="txtNewName">User ID</label>
+                    <input type="text" name="txtNewName" id="txtNewName" placeholder="enter user ID" value="peter" required>
+                </div>
+
+                <div data-role="fieldcontainer">
+                    <label for="txtNewEmail">Email</label>
+                    <input type="text" name="txtNewEmail" id="txtNewEmail" placeholder="enter email" value="peter@peter.com" required>
+                </div>
+
+                <div data-role="fieldcontainer">
+                    <label for="txtNewPassword">Password</label>
+                    <input type="text" name="txtNewPassword" id="txtNewPassword" placeholder="enter password" value="peter" required>
+                </div>
+
+                <div data-role="fieldcontainer">
+                    <label for="txtNewPasswordAgain">Re-Enter Password</label>
+                    <input type="text" name="txtNewPasswordAgain" id="txtNewPasswordAgain" placeholder="enter password again" value="peter" required>
+                </div>
+
+                <div data-role="fieldcontainer">
+                    <img id="imgNewUser" height="100">
+                    <input type="button" name="selectimg" id="btnSelectImg" value="My Picture">
+                </div>
+
+                <div data-role="fieldcontainer">
+                    <label for="description">About Me:</label>
+                    <textarea rows="8" name="description" id="description"></textarea>
+                </div>
+
+                <input type="button" id="btnCreateAccount" value="Create Account">
+            </form>
+        </div>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>Copyright 2017 OTBS</h4>
+        </footer>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+</body>
+</html>
