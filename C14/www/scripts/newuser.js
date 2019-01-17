@@ -1,6 +1,6 @@
 ﻿(function () {
 
-    var imgNewUserPictureName = "";
+    var imgNewUserPictureName = "dummy.jpg";
     var userid;
     var password;
     var passwordagain;
